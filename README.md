@@ -35,7 +35,7 @@ $$
 F_p\sum_{j}\frac{\delta(t-t_j)}{\theta'(t_j)}
 $$
 
-ここで$t_j$は$\theta(t)-\theta_0$のゼロ点
+ここで $t_j$ は $\theta(t)-\theta_0$ のゼロ点
 
 と書ける。方程式は
 
