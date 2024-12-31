@@ -15,17 +15,23 @@ $$
 \frac{d^2}{dt^2}\theta+\frac{g}{L}\sin\theta=F_p \delta(\theta(t)-\theta_0)
 $$
 外力項は
+
 $$
 F_p \delta(\theta(t)-\theta_0)
 $$
+
 デルタ関数の公式
+
 $$
 \delta(f(x))=\sum_{j}\frac{\delta(x-x_j)}{f'(x_j)}
 $$
+
 を用いると、
+
 $$
 F_p\sum_{j}\frac{\delta(t-t_j)}{\theta'(t_j)}
 $$
+
 と書ける
 ## tire
 <pre>
