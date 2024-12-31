@@ -4,7 +4,7 @@
 https://youtu.be/eEni2Er38Po?si=SkRQ7HdTevHB4lY2 via @YouTube 
 (力学を応用して筋力だけでは動かせないものを動かす)
 
-# hook
+## hook
 <pre>
 ・フックの場合
 １）初期値はフックを角度をつけて離す
@@ -13,7 +13,11 @@ https://youtu.be/eEni2Er38Po?si=SkRQ7HdTevHB4lY2 via @YouTube
 $$
 \frac{d^2}{dt^2}\theta+\frac{g}{L}\sin\theta=F_p \delta(\theta(t)-\theta_0)
 $$
-# tire
+
+$$
+F_p \delta(\theta(t)-\theta_0)
+$$
+## tire
 <pre>
 ・タイヤの場合
 １）地面に接したときに上方向に反発力が生じる
