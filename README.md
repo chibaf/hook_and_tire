@@ -23,7 +23,6 @@ F_p \delta(\theta(t)-\theta_0)
 $$
 
 は
-
 デルタ関数の公式
 
 $$
@@ -34,6 +33,10 @@ $$
 
 $$
 F_p\sum_{j}\frac{\delta(t-t_j)}{\theta'(t_j)}
+$$
+
+$$
+\frac{d^2}{dt^2}\theta(t)+\frac{g}{L}\sin\theta(t)=F_p\sum_{j}\frac{\delta(t-t_j)}{\theta'(t_j)}
 $$
 
 と書ける
