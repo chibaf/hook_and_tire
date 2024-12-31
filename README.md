@@ -5,6 +5,8 @@ https://youtu.be/eEni2Er38Po?si=SkRQ7HdTevHB4lY2 via @YouTube
 (力学を応用して筋力だけでは動かせないものを動かす)
 
 ## hook
+<img width="338" alt="image" src="https://github.com/user-attachments/assets/91a38b21-90c7-4ff6-b235-2faebfb4b44d" />
+
 <pre>
 ・フックの場合
 １）初期値はフックを角度をつけて離す
