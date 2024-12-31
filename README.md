@@ -11,14 +11,18 @@ https://youtu.be/eEni2Er38Po?si=SkRQ7HdTevHB4lY2 via @YouTube
 ２）力はフックがある角度になったら接線方向に加える（境界条件）
 ３）運動方程式は振り子
 </pre>
+
 $$
 \frac{d^2}{dt^2}\theta+\frac{g}{L}\sin\theta=F_p \delta(\theta(t)-\theta_0)
 $$
-外力項は
+
+外力項
 
 $$
 F_p \delta(\theta(t)-\theta_0)
 $$
+
+は
 
 デルタ関数の公式
 
