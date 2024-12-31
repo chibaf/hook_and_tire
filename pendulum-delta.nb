@@ -1,0 +1,1282 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     54999,       1274]
+NotebookOptionsPosition[     52980,       1231]
+NotebookOutlinePosition[     53375,       1247]
+CellTagsIndexPosition[     53332,       1244]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "''"}], "[", "t", "]"}], "+", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"x", "[", "t", "]"}], "]"}]}], "==", "0"}], ",", 
+   RowBox[{"x", "[", "t", "]"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.944551873074134*^9, 3.9445519197555237`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"618bcace-b304-4568-90c8-b468cbd777dc"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "ifun", 
+   "\"Inverse functions are being used by \
+\\!\\(\\*RowBox[{\\\"Solve\\\"}]\\), so some solutions may not be found; use \
+Reduce for complete solution information.\"", 2, 1, 1, 21456221406008571088, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.944551922470739*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"1b4b7f7c-8b52-4ecb-b7e7-4fa2bbe4f5a1"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "[", "t", "]"}], "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "2"}], " ", 
+      RowBox[{"JacobiAmplitude", "[", 
+       RowBox[{
+        RowBox[{
+         FractionBox["1", "2"], " ", 
+         SqrtBox[
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"2", "+", 
+             TemplateBox[{"1"},
+              "C"]}], ")"}], " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"t", "+", 
+              TemplateBox[{"2"},
+               "C"]}], ")"}], "2"]}]]}], ",", 
+        FractionBox["4", 
+         RowBox[{"2", "+", 
+          TemplateBox[{"1"},
+           "C"]}]]}], "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "[", "t", "]"}], "\[Rule]", 
+     RowBox[{"2", " ", 
+      RowBox[{"JacobiAmplitude", "[", 
+       RowBox[{
+        RowBox[{
+         FractionBox["1", "2"], " ", 
+         SqrtBox[
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"2", "+", 
+             TemplateBox[{"1"},
+              "C"]}], ")"}], " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"t", "+", 
+              TemplateBox[{"2"},
+               "C"]}], ")"}], "2"]}]]}], ",", 
+        FractionBox["4", 
+         RowBox[{"2", "+", 
+          TemplateBox[{"1"},
+           "C"]}]]}], "]"}]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.944551922495297*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"2b85c8d2-810f-474b-83bf-fe6351297384"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "''"}], "[", "t", "]"}], "+", 
+     RowBox[{"g", " ", "m"}]}], "==", "0"}], ",", 
+   RowBox[{"x", "[", "t", "]"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.944551873074134*^9, 3.9445519197555237`*^9}, {
+  3.9445543851662703`*^9, 3.944554408481064*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"35c5a70c-4dda-416d-a16b-4f0bbc515d56"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"x", "[", "t", "]"}], "\[Rule]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox["1", "2"]}], " ", "g", " ", "m", " ", 
+      SuperscriptBox["t", "2"]}], "+", 
+     TemplateBox[{"1"},
+      "C"], "+", 
+     RowBox[{"t", " ", 
+      TemplateBox[{"2"},
+       "C"]}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.944554409308172*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"3c5538ef-e9a8-472e-9335-07da0e3eca6a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "DiracDelta"}]], "Input",
+ CellChangeTimes->{{3.944568006396677*^9, 3.9445680225944366`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"f1f606de-e84d-44c9-9887-28142193a01d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox[
+             TagBox[
+              TooltipBox[
+               StyleBox["\<\" Symbol\"\>", "InformationRowLabel",
+                StripOnInput->False],
+               "\"Symbol\"",
+               TooltipStyle->"TextStyling"],
+              Annotation[#, "Symbol", "Tooltip"]& ], "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              
+              ButtonData->
+               "http://reference.wolfram.com/language/ref/DiracDelta.html",
+              
+              ButtonNote->
+               "http://reference.wolfram.com/language/ref/DiracDelta.html"],
+             "\"http://reference.wolfram.com/language/ref/DiracDelta.html\""],
+            
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"DiracDelta\\\", \\\"[\\\", \
+StyleBox[\\\"x\\\", \\\"TI\\\"], \\\"]\\\"}]\\) represents the Dirac delta \
+function \\!\\(\\*RowBox[{\\\"\[Delta]\\\", \\\"(\\\", \\\"x\\\", \\\")\\\"}]\
+\\). \\n\\!\\(\\*RowBox[{\\\"DiracDelta\\\", \\\"[\\\", \
+RowBox[{SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"1\\\", \
+\\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\
+\"TR\\\"]}], \\\"]\\\"}]\\) represents the multidimensional Dirac delta \
+function \\!\\(\\*RowBox[{\\\"\[Delta]\\\", \\\"(\\\", \
+RowBox[{SubscriptBox[\\\"x\\\", \\\"1\\\"], \\\",\\\", \
+SubscriptBox[\\\"x\\\", \\\"2\\\"], \\\",\\\", \\\"\[Ellipsis]\\\"}], \\\")\\\
+\"}]\\). \"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/DiracDelta.\
+html"], None}, "http://reference.wolfram.com/language/ref/DiracDelta.html", 
+                    "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{"Listable", ",", "Orderless", ",", "Protected"}], 
+                    "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`DiracDelta\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox[
+             TagBox[
+              TooltipBox[
+               StyleBox["\<\" Symbol\"\>", "InformationRowLabel",
+                StripOnInput->False],
+               "\"Symbol\"",
+               TooltipStyle->"TextStyling"],
+              Annotation[#, "Symbol", "Tooltip"]& ], "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              
+              ButtonData->
+               "http://reference.wolfram.com/language/ref/DiracDelta.html",
+              
+              ButtonNote->
+               "http://reference.wolfram.com/language/ref/DiracDelta.html"],
+             "\"http://reference.wolfram.com/language/ref/DiracDelta.html\""],
+            
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"DiracDelta\\\", \\\"[\\\", \
+StyleBox[\\\"x\\\", \\\"TI\\\"], \\\"]\\\"}]\\) represents the Dirac delta \
+function \\!\\(\\*RowBox[{\\\"\[Delta]\\\", \\\"(\\\", \\\"x\\\", \\\")\\\"}]\
+\\). \\n\\!\\(\\*RowBox[{\\\"DiracDelta\\\", \\\"[\\\", \
+RowBox[{SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"1\\\", \
+\\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\
+\"TR\\\"]}], \\\"]\\\"}]\\) represents the multidimensional Dirac delta \
+function \\!\\(\\*RowBox[{\\\"\[Delta]\\\", \\\"(\\\", \
+RowBox[{SubscriptBox[\\\"x\\\", \\\"1\\\"], \\\",\\\", \
+SubscriptBox[\\\"x\\\", \\\"2\\\"], \\\",\\\", \\\"\[Ellipsis]\\\"}], \\\")\\\
+\"}]\\). \"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {2., 8.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {2., 8.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"DiracDelta\", \"[\", StyleBox[\"x\", \"TI\"], \"]\"}]\) \
+represents the Dirac delta function \!\(\*RowBox[{\"\[Delta]\", \"(\", \"x\", \
+\")\"}]\). \n\!\(\*RowBox[{\"DiracDelta\", \"[\", \
+RowBox[{SubscriptBox[StyleBox[\"x\", \"TI\"], StyleBox[\"1\", \"TR\"]], \
+\",\", SubscriptBox[StyleBox[\"x\", \"TI\"], StyleBox[\"2\", \"TR\"]], \",\", \
+StyleBox[\"\[Ellipsis]\", \"TR\"]}], \"]\"}]\) represents the \
+multidimensional Dirac delta function \!\(\*RowBox[{\"\[Delta]\", \"(\", \
+RowBox[{SubscriptBox[\"x\", \"1\"], \",\", SubscriptBox[\"x\", \"2\"], \",\", \
+\"\[Ellipsis]\"}], \")\"}]\). ", 
+    "Documentation" -> <|
+     "Web" -> "http://reference.wolfram.com/language/ref/DiracDelta.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, "Options" -> None, 
+    "Attributes" -> {Listable, Orderless, Protected}, "FullName" -> 
+    "System`DiracDelta"|>, False]]], "Output",
+ CellChangeTimes->{{3.944568015296278*^9, 3.9445680242107143`*^9}},
+ CellLabel->"Out[4]=",ExpressionUUID->"bb50a3f1-dd89-40ce-be17-f8d4173a0b6c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "NDSolve"}]], "Input",
+ CellChangeTimes->{{3.944568198602695*^9, 3.944568201703281*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"32a45fb4-a0fa-4167-ae75-41417b4f6c05"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox[
+             TagBox[
+              TooltipBox[
+               StyleBox["\<\" Symbol\"\>", "InformationRowLabel",
+                StripOnInput->False],
+               "\"Symbol\"",
+               TooltipStyle->"TextStyling"],
+              Annotation[#, "Symbol", "Tooltip"]& ], "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              
+              ButtonData->
+               "http://reference.wolfram.com/language/ref/NDSolve.html",
+              
+              ButtonNote->
+               "http://reference.wolfram.com/language/ref/NDSolve.html"],
+             "\"http://reference.wolfram.com/language/ref/NDSolve.html\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"NDSolve\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"eqns\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"u\\\", \\\
+\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"x\\\", \\\"TI\\\
+\"], \\\",\\\", SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"min\\\", \\\"TI\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"max\\\", \
+\\\"TI\\\"]]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) finds a numerical solution to \
+the ordinary differential equations \\!\\(\\*StyleBox[\\\"eqns\\\", \
+\\\"TI\\\"]\\) for the function \\!\\(\\*StyleBox[\\\"u\\\", \\\"TI\\\"]\\) \
+with the independent variable \\!\\(\\*StyleBox[\\\"x\\\", \\\"TI\\\"]\\) in \
+the range \\!\\(\\*SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"min\\\", \\\"TI\\\"]]\\) to \\!\\(\\*SubscriptBox[StyleBox[\\\"x\
+\\\", \\\"TI\\\"], StyleBox[\\\"max\\\", \\\"TI\\\"]]\\). \
+\\n\\!\\(\\*RowBox[{\\\"NDSolve\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"eqns\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"u\\\", \\\
+\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"x\\\", \\\"TI\\\
+\"], \\\",\\\", SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"min\\\", \\\"TI\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"max\\\", \
+\\\"TI\\\"]]}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{StyleBox[\\\"y\\\", \\\"TI\\\"], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"y\\\", \\\"TI\\\"], StyleBox[\\\"min\\\", \
+\\\"TI\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"y\\\", \\\"TI\\\"], \
+StyleBox[\\\"max\\\", \\\"TI\\\"]]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) solves \
+the partial differential equations \\!\\(\\*StyleBox[\\\"eqns\\\", \
+\\\"TI\\\"]\\) over a rectangular region.\\n\\!\\(\\*RowBox[{\\\"NDSolve\\\", \
+\\\"[\\\", RowBox[{StyleBox[\\\"eqns\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\
+\"u\\\", \\\"TI\\\"], \\\",\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{StyleBox[\
+\\\"x\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"y\\\", \\\"TI\\\"]}], \\\"}\\\
+\"}], StyleBox[\\\"\[Element]\\\", \\\"TR\\\"], \
+StyleBox[\\\"\[CapitalOmega]\\\", \\\"TR\\\"]}]}], \\\"]\\\"}]\\) solves the \
+partial differential equations \\!\\(\\*StyleBox[\\\"eqns\\\", \\\"TI\\\"]\\) \
+over the region \\!\\(\\*StyleBox[\\\"\[CapitalOmega]\\\", \\\"TR\\\"]\\).\\n\
+\\!\\(\\*RowBox[{\\\"NDSolve\\\", \\\"[\\\", RowBox[{StyleBox[\\\"eqns\\\", \
+\\\"TI\\\"], \\\",\\\", StyleBox[\\\"u\\\", \\\"TI\\\"], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"t\\\", \\\"TI\\\"], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"t\\\", \\\"TI\\\"], StyleBox[\\\"min\\\", \
+\\\"TI\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"t\\\", \\\"TI\\\"], \
+StyleBox[\\\"max\\\", \\\"TI\\\"]]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"x\\\", \\\"TI\\\"], \
+\\\",\\\", StyleBox[\\\"y\\\", \\\"TI\\\"]}], \\\"}\\\"}], StyleBox[\\\"\
+\[Element]\\\", \\\"TR\\\"], StyleBox[\\\"\[CapitalOmega]\\\", \
+\\\"TR\\\"]}]}], \\\"]\\\"}]\\) solves the time-dependent partial \
+differential equations \\!\\(\\*StyleBox[\\\"eqns\\\", \\\"TI\\\"]\\) over \
+the region \\!\\(\\*StyleBox[\\\"\[CapitalOmega]\\\", \
+\\\"TR\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"NDSolve\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"eqns\\\", \\\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{SubscriptBox[StyleBox[\\\"u\\\", \\\"TI\\\"], StyleBox[\\\"1\\\", \
+\\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"u\\\", \\\"TI\\\"], \
+StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\
+\"TR\\\"]}], \\\"}\\\"}], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \
+\\\"TR\\\"]}], \\\"]\\\"}]\\) solves for the \
+functions\[NonBreakingSpace]\\!\\(\\*SubscriptBox[StyleBox[\\\"u\\\", \
+\\\"TI\\\"], StyleBox[\\\"i\\\", \\\"TI\\\"]]\\). \"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/NDSolve.html"],
+                     None}, 
+                    "http://reference.wolfram.com/language/ref/NDSolve.html", 
+                    "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   PaneSelectorBox[{True->
+                    ButtonBox[
+                    PaneSelectorBox[{False->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "DownPointerOpener"]]},
+                    "RowWithSeparators"], True->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "DownPointerOpenerHot"]]},
+                    "RowWithSeparators"]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                    Appearance->None,
+                    BaseStyle->None,
+                    
+                    ButtonFunction:>(Part[System`InformationDump`open$$, 3] = 
+                    False),
+                    Evaluator->Automatic,
+                    FrameMargins->0,
+                    ImageMargins->0,
+                    Method->"Preemptive"], False->
+                    ButtonBox[
+                    PaneSelectorBox[{False->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "RightPointerOpener"]]},
+                    "RowWithSeparators"], True->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "RightPointerOpenerHot"]]},
+                    "RowWithSeparators"]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                    Appearance->None,
+                    BaseStyle->None,
+                    
+                    ButtonFunction:>(Part[System`InformationDump`open$$, 3] = 
+                    True),
+                    Evaluator->Automatic,
+                    FrameMargins->0,
+                    ImageMargins->0,
+                    Method->"Preemptive"]}, Dynamic[
+                    FEPrivate`Part[System`InformationDump`open$$, 3]]], 
+                   PaneSelectorBox[{True->GridBox[{
+                    {
+                    RowBox[{"AccuracyGoal", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"Compiled", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"DependentVariables", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"DiscreteVariables", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"EvaluationMonitor", "\[Rule]", "None"}]},
+                    {
+                    RowBox[{"InitialSeeding", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"InterpolationOrder", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"MaxStepFraction", "\[Rule]", 
+                    FractionBox["1", "10"]}]},
+                    {
+                    RowBox[{"MaxSteps", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"MaxStepSize", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"Method", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"NormFunction", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"PrecisionGoal", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"StartingStepSize", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"StepMonitor", "\[Rule]", "None"}]},
+                    {
+                    RowBox[{
+                    "WorkingPrecision", "\[Rule]", "MachinePrecision"}]},
+                    {
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"(\"", "\"\[InvisibleSpace]\"", "16", "\" total)\""},
+                    "RowDefault"], "InformationRowOpener",
+                    StripOnInput->False]}
+                    },
+                    BaselinePosition->{Baseline, {1, 1}},
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{1.}}}], False->
+                    RowBox[{
+                    RowBox[{"AccuracyGoal", "\[Rule]", "Automatic"}], 
+                    "\[ThinSpace]", 
+                    StyleBox["\<\"\[Ellipsis]\"\>", "InformationRowOpener",
+                    StripOnInput->False], "\[ThinSpace]", 
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"(\"", "\"\[InvisibleSpace]\"", "16", "\" total)\""},
+                    "RowDefault"], "InformationRowOpener",
+                    StripOnInput->False]}]}, Dynamic[
+                    FEPrivate`Part[System`InformationDump`open$$, 3]],
+                    BaselinePosition->Baseline,
+                    ImageSize->Automatic]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", "Protected", "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`NDSolve\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox[
+             TagBox[
+              TooltipBox[
+               StyleBox["\<\" Symbol\"\>", "InformationRowLabel",
+                StripOnInput->False],
+               "\"Symbol\"",
+               TooltipStyle->"TextStyling"],
+              Annotation[#, "Symbol", "Tooltip"]& ], "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              
+              ButtonData->
+               "http://reference.wolfram.com/language/ref/NDSolve.html",
+              
+              ButtonNote->
+               "http://reference.wolfram.com/language/ref/NDSolve.html"],
+             "\"http://reference.wolfram.com/language/ref/NDSolve.html\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"NDSolve\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"eqns\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"u\\\", \\\
+\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"x\\\", \\\"TI\\\
+\"], \\\",\\\", SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"min\\\", \\\"TI\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"max\\\", \
+\\\"TI\\\"]]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) finds a numerical solution to \
+the ordinary differential equations \\!\\(\\*StyleBox[\\\"eqns\\\", \
+\\\"TI\\\"]\\) for the function \\!\\(\\*StyleBox[\\\"u\\\", \\\"TI\\\"]\\) \
+with the independent variable \\!\\(\\*StyleBox[\\\"x\\\", \\\"TI\\\"]\\) in \
+the range \\!\\(\\*SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"min\\\", \\\"TI\\\"]]\\) to \\!\\(\\*SubscriptBox[StyleBox[\\\"x\
+\\\", \\\"TI\\\"], StyleBox[\\\"max\\\", \\\"TI\\\"]]\\). \
+\\n\\!\\(\\*RowBox[{\\\"NDSolve\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"eqns\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"u\\\", \\\
+\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"x\\\", \\\"TI\\\
+\"], \\\",\\\", SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"min\\\", \\\"TI\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"max\\\", \
+\\\"TI\\\"]]}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{StyleBox[\\\"y\\\", \\\"TI\\\"], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"y\\\", \\\"TI\\\"], StyleBox[\\\"min\\\", \
+\\\"TI\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"y\\\", \\\"TI\\\"], \
+StyleBox[\\\"max\\\", \\\"TI\\\"]]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) solves \
+the partial differential equations \\!\\(\\*StyleBox[\\\"eqns\\\", \
+\\\"TI\\\"]\\) over a rectangular region.\\n\\!\\(\\*RowBox[{\\\"NDSolve\\\", \
+\\\"[\\\", RowBox[{StyleBox[\\\"eqns\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\
+\"u\\\", \\\"TI\\\"], \\\",\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{StyleBox[\
+\\\"x\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"y\\\", \\\"TI\\\"]}], \\\"}\\\
+\"}], StyleBox[\\\"\[Element]\\\", \\\"TR\\\"], \
+StyleBox[\\\"\[CapitalOmega]\\\", \\\"TR\\\"]}]}], \\\"]\\\"}]\\) solves the \
+partial differential equations \\!\\(\\*StyleBox[\\\"eqns\\\", \\\"TI\\\"]\\) \
+over the region \\!\\(\\*StyleBox[\\\"\[CapitalOmega]\\\", \\\"TR\\\"]\\).\\n\
+\\!\\(\\*RowBox[{\\\"NDSolve\\\", \\\"[\\\", RowBox[{StyleBox[\\\"eqns\\\", \
+\\\"TI\\\"], \\\",\\\", StyleBox[\\\"u\\\", \\\"TI\\\"], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"t\\\", \\\"TI\\\"], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"t\\\", \\\"TI\\\"], StyleBox[\\\"min\\\", \
+\\\"TI\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"t\\\", \\\"TI\\\"], \
+StyleBox[\\\"max\\\", \\\"TI\\\"]]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"x\\\", \\\"TI\\\"], \
+\\\",\\\", StyleBox[\\\"y\\\", \\\"TI\\\"]}], \\\"}\\\"}], StyleBox[\\\"\
+\[Element]\\\", \\\"TR\\\"], StyleBox[\\\"\[CapitalOmega]\\\", \
+\\\"TR\\\"]}]}], \\\"]\\\"}]\\) solves the time-dependent partial \
+differential equations \\!\\(\\*StyleBox[\\\"eqns\\\", \\\"TI\\\"]\\) over \
+the region \\!\\(\\*StyleBox[\\\"\[CapitalOmega]\\\", \
+\\\"TR\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"NDSolve\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"eqns\\\", \\\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{SubscriptBox[StyleBox[\\\"u\\\", \\\"TI\\\"], StyleBox[\\\"1\\\", \
+\\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"u\\\", \\\"TI\\\"], \
+StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\
+\"TR\\\"]}], \\\"}\\\"}], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \
+\\\"TR\\\"]}], \\\"]\\\"}]\\) solves for the \
+functions\[NonBreakingSpace]\\!\\(\\*SubscriptBox[StyleBox[\\\"u\\\", \
+\\\"TI\\\"], StyleBox[\\\"i\\\", \\\"TI\\\"]]\\). \"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {2., 8.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {2., 8.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"NDSolve\", \"[\", RowBox[{StyleBox[\"eqns\", \"TI\"], \
+\",\", StyleBox[\"u\", \"TI\"], \",\", RowBox[{\"{\", RowBox[{StyleBox[\"x\", \
+\"TI\"], \",\", SubscriptBox[StyleBox[\"x\", \"TI\"], StyleBox[\"min\", \
+\"TI\"]], \",\", SubscriptBox[StyleBox[\"x\", \"TI\"], StyleBox[\"max\", \"TI\
+\"]]}], \"}\"}]}], \"]\"}]\) finds a numerical solution to the ordinary \
+differential equations \!\(\*StyleBox[\"eqns\", \"TI\"]\) for the function \!\
+\(\*StyleBox[\"u\", \"TI\"]\) with the independent variable \
+\!\(\*StyleBox[\"x\", \"TI\"]\) in the range \
+\!\(\*SubscriptBox[StyleBox[\"x\", \"TI\"], StyleBox[\"min\", \"TI\"]]\) to \
+\!\(\*SubscriptBox[StyleBox[\"x\", \"TI\"], StyleBox[\"max\", \"TI\"]]\). \n\
+\!\(\*RowBox[{\"NDSolve\", \"[\", RowBox[{StyleBox[\"eqns\", \"TI\"], \",\", \
+StyleBox[\"u\", \"TI\"], \",\", RowBox[{\"{\", RowBox[{StyleBox[\"x\", \
+\"TI\"], \",\", SubscriptBox[StyleBox[\"x\", \"TI\"], StyleBox[\"min\", \
+\"TI\"]], \",\", SubscriptBox[StyleBox[\"x\", \"TI\"], StyleBox[\"max\", \"TI\
+\"]]}], \"}\"}], \",\", RowBox[{\"{\", RowBox[{StyleBox[\"y\", \"TI\"], \
+\",\", SubscriptBox[StyleBox[\"y\", \"TI\"], StyleBox[\"min\", \"TI\"]], \
+\",\", SubscriptBox[StyleBox[\"y\", \"TI\"], StyleBox[\"max\", \"TI\"]]}], \
+\"}\"}]}], \"]\"}]\) solves the partial differential equations \
+\!\(\*StyleBox[\"eqns\", \"TI\"]\) over a rectangular region.\n\!\(\*RowBox[{\
+\"NDSolve\", \"[\", RowBox[{StyleBox[\"eqns\", \"TI\"], \",\", \
+StyleBox[\"u\", \"TI\"], \",\", RowBox[{RowBox[{\"{\", \
+RowBox[{StyleBox[\"x\", \"TI\"], \",\", StyleBox[\"y\", \"TI\"]}], \"}\"}], \
+StyleBox[\"\[Element]\", \"TR\"], StyleBox[\"\[CapitalOmega]\", \"TR\"]}]}], \
+\"]\"}]\) solves the partial differential equations \!\(\*StyleBox[\"eqns\", \
+\"TI\"]\) over the region \!\(\*StyleBox[\"\[CapitalOmega]\", \"TR\"]\).\n\
+\!\(\*RowBox[{\"NDSolve\", \"[\", RowBox[{StyleBox[\"eqns\", \"TI\"], \",\", \
+StyleBox[\"u\", \"TI\"], \",\", RowBox[{\"{\", RowBox[{StyleBox[\"t\", \
+\"TI\"], \",\", SubscriptBox[StyleBox[\"t\", \"TI\"], StyleBox[\"min\", \
+\"TI\"]], \",\", SubscriptBox[StyleBox[\"t\", \"TI\"], StyleBox[\"max\", \"TI\
+\"]]}], \"}\"}], \",\", RowBox[{RowBox[{\"{\", RowBox[{StyleBox[\"x\", \
+\"TI\"], \",\", StyleBox[\"y\", \"TI\"]}], \"}\"}], StyleBox[\"\[Element]\", \
+\"TR\"], StyleBox[\"\[CapitalOmega]\", \"TR\"]}]}], \"]\"}]\) solves the \
+time-dependent partial differential equations \!\(\*StyleBox[\"eqns\", \
+\"TI\"]\) over the region \!\(\*StyleBox[\"\[CapitalOmega]\", \"TR\"]\).\n\
+\!\(\*RowBox[{\"NDSolve\", \"[\", RowBox[{StyleBox[\"eqns\", \"TI\"], \",\", \
+RowBox[{\"{\", RowBox[{SubscriptBox[StyleBox[\"u\", \"TI\"], StyleBox[\"1\", \
+\"TR\"]], \",\", SubscriptBox[StyleBox[\"u\", \"TI\"], StyleBox[\"2\", \
+\"TR\"]], \",\", StyleBox[\"\[Ellipsis]\", \"TR\"]}], \"}\"}], \",\", \
+StyleBox[\"\[Ellipsis]\", \"TR\"]}], \"]\"}]\) solves for the functions\
+\[NonBreakingSpace]\!\(\*SubscriptBox[StyleBox[\"u\", \"TI\"], \
+StyleBox[\"i\", \"TI\"]]\). ", 
+    "Documentation" -> <|
+     "Web" -> "http://reference.wolfram.com/language/ref/NDSolve.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, 
+    "Options" -> {
+     AccuracyGoal -> Automatic, Compiled -> Automatic, DependentVariables -> 
+      Automatic, DiscreteVariables -> {}, EvaluationMonitor -> None, 
+      InitialSeeding -> {}, InterpolationOrder -> Automatic, MaxStepFraction -> 
+      Rational[1, 10], MaxSteps -> Automatic, MaxStepSize -> Automatic, 
+      Method -> Automatic, NormFunction -> Automatic, PrecisionGoal -> 
+      Automatic, StartingStepSize -> Automatic, StepMonitor -> None, 
+      WorkingPrecision -> MachinePrecision}, "Attributes" -> {Protected}, 
+    "FullName" -> "System`NDSolve"|>, False]]], "Output",
+ CellChangeTimes->{3.9445682030591593`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"288ece63-fda8-450b-83f5-734a8dfbebad"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NDSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"x", "''"}], "[", "t", "]"}], "+", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"x", "[", "t", "]"}], "]"}]}], "==", 
+      RowBox[{"DiracDelta", "[", 
+       RowBox[{"t", "-", "h"}], "]"}]}], ",", 
+     RowBox[{
+      RowBox[{"x", "[", "0", "]"}], "==", "1"}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"x", "'"}], "[", "0", "]"}], "==", "1"}]}], "}"}], ",", 
+   RowBox[{"x", "[", "t", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.944551873074134*^9, 3.9445519197555237`*^9}, {
+   3.944568045255403*^9, 3.944568057270482*^9}, 3.9445681894032927`*^9, {
+   3.9445682507192173`*^9, 3.944568312522737*^9}, {3.944588354077826*^9, 
+   3.944588355192088*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"fff95776-ad7a-43bd-8deb-e28f4a523c7b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NDSolve", "ndinid", 
+   "\"Initial condition \\!\\(\\*RowBox[{\\\"Boole\\\", \\\"[\\\", \
+RowBox[{RowBox[{RowBox[{\\\"0.`\\\", \\\"\[VeryThinSpace]\\\"}], \\\"-\\\", \
+\\\"h\\\"}], \\\"\[Equal]\\\", \\\"0\\\"}], \\\"]\\\"}]\\) is not in the \
+range specified by the discrete variable \
+\\!\\(\\*RowBox[{\\\"NDSolve`s$1615499\\\"}]\\).\"", 2, 5, 2, 
+   21456331768720835457, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.944568314987636*^9, 3.944588358192021*^9},
+ CellLabel->
+  "During evaluation of \
+In[5]:=",ExpressionUUID->"28347197-bd8f-44a2-af75-e69a3ae98fff"],
+
+Cell[BoxData[
+ RowBox[{"NDSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        RowBox[{"x", "[", "t", "]"}], "]"}], "+", 
+       RowBox[{
+        SuperscriptBox["x", "\[Prime]\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}]}], "\[Equal]", 
+      RowBox[{"DiracDelta", "[", 
+       RowBox[{
+        RowBox[{"-", "h"}], "+", "t"}], "]"}]}], ",", 
+     RowBox[{
+      RowBox[{"x", "[", "0", "]"}], "\[Equal]", "1"}], ",", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["x", "\[Prime]",
+        MultilineFunction->None], "[", "0", "]"}], "\[Equal]", "1"}]}], "}"}],
+    ",", 
+   RowBox[{"x", "[", "t", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "10"}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.944588358206718*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"57ce9544-6d8e-4de1-a836-80b9e0ab761e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "''"}], "[", "t", "]"}], "+", 
+     RowBox[{"x", "[", "t", "]"}]}], "==", 
+    RowBox[{"DiracDelta", "[", 
+     RowBox[{"t", "-", "h"}], "]"}]}], ",", 
+   RowBox[{"x", "[", "t", "]"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.944551873074134*^9, 3.9445519197555237`*^9}, {
+   3.944568045255403*^9, 3.944568057270482*^9}, 3.9445681894032927`*^9, {
+   3.9445682507192173`*^9, 3.944568312522737*^9}, {3.9445686487397118`*^9, 
+   3.944568700266118*^9}, {3.944568774332445*^9, 3.944568796756933*^9}, {
+   3.944569193637179*^9, 3.944569198315653*^9}, {3.9445883735721083`*^9, 
+   3.944588400538761*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"3c562490-46df-4f3c-a155-9933da937d62"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"x", "[", "t", "]"}], "\[Rule]", 
+    RowBox[{
+     RowBox[{
+      TemplateBox[{"1"},
+       "C"], " ", 
+      RowBox[{"Cos", "[", "t", "]"}]}], "-", 
+     RowBox[{
+      RowBox[{"Cos", "[", "t", "]"}], " ", 
+      RowBox[{"HeavisideTheta", "[", 
+       RowBox[{
+        RowBox[{"-", "h"}], "+", "t"}], "]"}], " ", 
+      RowBox[{"Sin", "[", "h", "]"}]}], "+", 
+     RowBox[{
+      TemplateBox[{"2"},
+       "C"], " ", 
+      RowBox[{"Sin", "[", "t", "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"Cos", "[", "h", "]"}], " ", 
+      RowBox[{"HeavisideTheta", "[", 
+       RowBox[{
+        RowBox[{"-", "h"}], "+", "t"}], "]"}], " ", 
+      RowBox[{"Sin", "[", "t", "]"}]}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.944568769311187*^9, 3.94456879170393*^9}, 
+   3.944569202655368*^9, 3.9445694626473494`*^9, 3.94458840282078*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"68b8bfbc-a96e-4d14-bcdb-311a39658386"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "''"}], "[", "t", "]"}], "+", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"x", "[", "t", "]"}], "]"}]}], "==", 
+    RowBox[{"DiracDelta", "[", 
+     RowBox[{"t", "-", "h"}], "]"}]}], ",", 
+   RowBox[{"x", "[", "t", "]"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.944551873074134*^9, 3.9445519197555237`*^9}, {
+   3.944568045255403*^9, 3.944568057270482*^9}, 3.9445681894032927`*^9, {
+   3.9445682507192173`*^9, 3.944568312522737*^9}, {3.9445686487397118`*^9, 
+   3.944568700266118*^9}, {3.944568774332445*^9, 3.944568796756933*^9}, {
+   3.944569193637179*^9, 3.944569198315653*^9}, {3.9445883735721083`*^9, 
+   3.944588435258835*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"75edcbff-af6e-4336-822f-53df148ff8bb"],
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"x", "[", "t", "]"}], "]"}], "+", 
+     RowBox[{
+      SuperscriptBox["x", "\[Prime]\[Prime]",
+       MultilineFunction->None], "[", "t", "]"}]}], "\[Equal]", 
+    RowBox[{"DiracDelta", "[", 
+     RowBox[{
+      RowBox[{"-", "h"}], "+", "t"}], "]"}]}], ",", 
+   RowBox[{"x", "[", "t", "]"}], ",", "t"}], "]"}]], "Output",
+ CellChangeTimes->{3.944588440954686*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"42edef0d-e488-4e0d-b4e7-82baa2a9d766"]
+}, Open  ]]
+},
+WindowSize->{808, 706},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"8a312546-61c6-4630-b891-66630cab6736"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 436, 11, 30, "Input",ExpressionUUID->"618bcace-b304-4568-90c8-b468cbd777dc"],
+Cell[1019, 35, 449, 11, 46, "Message",ExpressionUUID->"1b4b7f7c-8b52-4ecb-b7e7-4fa2bbe4f5a1"],
+Cell[1471, 48, 1525, 51, 94, "Output",ExpressionUUID->"2b85c8d2-810f-474b-83bf-fe6351297384"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3033, 104, 448, 11, 30, "Input",ExpressionUUID->"35c5a70c-4dda-416d-a16b-4f0bbc515d56"],
+Cell[3484, 117, 502, 16, 49, "Output",ExpressionUUID->"3c5538ef-e9a8-472e-9335-07da0e3eca6a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4023, 138, 199, 3, 30, "Input",ExpressionUUID->"f1f606de-e84d-44c9-9887-28142193a01d"],
+Cell[4225, 143, 14103, 330, 118, "Output",ExpressionUUID->"bb50a3f1-dd89-40ce-be17-f8d4173a0b6c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18365, 478, 194, 3, 30, "Input",ExpressionUUID->"32a45fb4-a0fa-4167-ae75-41417b4f6c05"],
+Cell[18562, 483, 28644, 580, 237, "Output",ExpressionUUID->"288ece63-fda8-450b-83f5-734a8dfbebad"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[47243, 1068, 954, 25, 30, "Input",ExpressionUUID->"fff95776-ad7a-43bd-8deb-e28f4a523c7b"],
+Cell[48200, 1095, 624, 13, 28, "Message",ExpressionUUID->"28347197-bd8f-44a2-af75-e69a3ae98fff"],
+Cell[48827, 1110, 899, 26, 34, "Output",ExpressionUUID->"57ce9544-6d8e-4de1-a836-80b9e0ab761e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[49763, 1141, 793, 17, 30, "Input",ExpressionUUID->"3c562490-46df-4f3c-a155-9933da937d62"],
+Cell[50559, 1160, 982, 28, 56, "Output",ExpressionUUID->"68b8bfbc-a96e-4d14-bcdb-311a39658386"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51578, 1193, 827, 18, 30, "Input",ExpressionUUID->"75edcbff-af6e-4336-822f-53df148ff8bb"],
+Cell[52408, 1213, 556, 15, 57, "Output",ExpressionUUID->"42edef0d-e488-4e0d-b4e7-82baa2a9d766"]
+}, Open  ]]
+}
+]
+*)
+
