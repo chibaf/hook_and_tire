@@ -45,6 +45,9 @@ $$
 $$
 
 ## tire
+<img width="281" alt="image" src="https://github.com/user-attachments/assets/0c1d4c9f-f964-4dc6-acb2-e6d711ea19a9" />
+
+
 <pre>
 ・タイヤの場合
 １）地面に接したときに上方向に反発力が生じる
