@@ -13,9 +13,11 @@ https://youtu.be/eEni2Er38Po?si=SkRQ7HdTevHB4lY2 via @YouTube
 $$
 \frac{d^2}{dt^2}\theta+\frac{g}{L}\sin\theta=F_p \delta(\theta(t)-\theta_0)
 $$
-
 $$
 F_p \delta(\theta(t)-\theta_0)
+$$
+$$
+\delta(f(x))=\sum_{j}\frac{\delta(x-x_j)}{f'(x_j)}
 $$
 ## tire
 <pre>
