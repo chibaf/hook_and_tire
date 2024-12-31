@@ -10,6 +10,9 @@ https://youtu.be/eEni2Er38Po?si=SkRQ7HdTevHB4lY2 via @YouTube
 １）初期値はフックを角度をつけて離す
 ２）力はフックがある角度になったら接線方向に加える（境界条件）
 </pre>
+$$
+\frac{d^2}{dt^2}\theta+\frac{g}{L}\sin\theta=F_p\, \delta(\theta(t)-\theta_0)
+$$
 <pre>
 ・タイヤの場合
 １）地面に接したときに上方向に反発力が生じる
