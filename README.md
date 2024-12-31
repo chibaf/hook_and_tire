@@ -35,9 +35,7 @@ $$
 F_p\sum_{j}\frac{\delta(t-t_j)}{\theta'(t_j)}
 $$
 
-ここで $t_j$ は $\theta(t)-\theta_0$ のゼロ点
-
-と書ける。方程式は
+と書ける。方程式は。ここで $t_j$ は $\theta(t)-\theta_0$ のゼロ点
 
 $$
 \frac{d^2}{dt^2}\theta(t)+\frac{g}{L}\sin\theta(t)=F_p\sum_{j}\frac{\delta(t-t_j)}{\theta'(t_j)}
