@@ -11,7 +11,7 @@ https://youtu.be/eEni2Er38Po?si=SkRQ7HdTevHB4lY2 via @YouTube
 ２）力はフックがある角度になったら接線方向に加える（境界条件）
 </pre>
 $$
-\frac{d^2}{dt^2}\theta+\frac{g}{L}\sin\theta=F_p\, \delta(\theta(t)-\theta_0)
+\frac{d^2}{dt^2}\theta+\frac{g}{L}\sin\theta=F_p \delta(\theta(t)-\theta_0)
 $$
 <pre>
 ・タイヤの場合
