@@ -8,7 +8,7 @@ https://youtu.be/eEni2Er38Po?si=SkRQ7HdTevHB4lY2 via @YouTube
 <pre>
 ・フックの場合
 １）初期値はフックを角度をつけて離す
-２）力はフックが角度 $/theta_0$ になったら接線方向に加える（境界条件）
+２）力はフックが角度 $\theta_0$ になったら接線方向に加える（境界条件）
 ３）運動方程式は振り子
 </pre>
 
